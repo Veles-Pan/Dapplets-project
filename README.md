@@ -16,7 +16,7 @@ Application functionality: \
 
 • Interactive menu items (with GSAP) 
 
-![adaptive interface](https://github.com/Veles-Pan/Dapplets-project/raw/main/src/assets/for-readme/menu.gif)
+![adaptive interface](https://github.com/Veles-Pan/Dapplets-project/raw/main/src/assets/for-readme/responsible.gif)
 
 • Adaptive interface (not ready thoroughly) 
 
