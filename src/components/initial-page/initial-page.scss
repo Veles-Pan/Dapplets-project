@@ -1,0 +1,135 @@
+.initial-page {
+    height: 100%;
+    width: 100%;
+    background: url('../../assets/initial-page/bg.png') center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .frame {
+        width: 760px;
+        height: fit-content;
+        min-height: 410px;
+        max-width: 92vw;
+        max-height: 94vh;
+        padding: 40px;
+        background: linear-gradient(
+            180deg,
+            rgba(185, 251, 255, 0.2) 0%,
+            rgba(227, 220, 255, 0.2) 100%
+        );
+        backdrop-filter: blur(30px);
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media (max-width: 520px) {
+            padding: 30px;
+        }
+
+        &__logo {
+            position: absolute;
+            top: 11%;
+            right: 5%;
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 0.75rem;
+            line-height: 149%;
+            text-transform: uppercase;
+            color: #ffffff;
+
+            span {
+                color: #c50140;
+            }
+
+            @media (max-width: 520px) {
+                top: 6%;
+                right: 4%;
+                font-size: 0.65rem;
+            }
+        }
+
+        &__title {
+            margin: 0;
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 3rem;
+            line-height: 94%;
+            text-transform: uppercase;
+            color: #ffffff;
+            max-width: 450px;
+
+            @media (max-width: 520px) {
+                font-size: 22px;
+                line-height: 110%;
+                max-width: 200px;
+            }
+        }
+
+        &__texts {
+            display: grid;
+            gap: 21px 0;
+
+            @media (max-width: 520px) {
+                gap: 10px 0;
+                margin: 5px 0;
+            }
+        }
+
+        &__text {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 149%;
+            color: #ffffff;
+
+            @media (max-width: 520px) {
+                font-size: 0.95rem;
+            }
+        }
+
+        &__buttons {
+            display: grid;
+            grid-auto-flow: column;
+            gap: 0 20px;
+        }
+
+        &__button {
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 13px 20px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+
+            &_desktop {
+                background: #c50140;
+            }
+
+            &_mobile {
+                background: transparent;
+                border: 1px solid #ffffff;
+            }
+        }
+    }
+}

@@ -1,0 +1,200 @@
+.sidebar {
+  height: 100%;
+  width: 18.7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(185, 251, 255, 0.2) 0%, rgba(227, 220, 255, 0.2) 100%);
+  backdrop-filter: blur(30px);
+  padding-top: 77px;
+  border: 2px solid white;
+}
+@media (max-width: 1280px) {
+  .sidebar {
+    width: 98px !important;
+  }
+}
+.sidebar__header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 1fr 16px;
+  align-items: center;
+  gap: 0 10px;
+  padding: 0 20px 0 36px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1280px) {
+  .sidebar__header {
+    padding: 0px 0px 0px 23px !important;
+  }
+}
+.sidebar__title {
+  margin: 0;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 149%;
+  text-transform: uppercase;
+  color: #2a2a2a;
+}
+@media (max-width: 1280px) {
+  .sidebar__title {
+    display: none !important;
+  }
+}
+.sidebar__title span {
+  color: #c50140;
+}
+.sidebar__arrow {
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+@media (max-width: 1280px) {
+  .sidebar__arrow {
+    display: none !important;
+  }
+}
+.sidebar__arrow:hover {
+  opacity: 0.7;
+}
+.sidebar__icon {
+  grid-area: icon;
+}
+.sidebar__subtitle {
+  grid-area: subtitle;
+  color: #565555;
+}
+@media (max-width: 1280px) {
+  .sidebar__subtitle {
+    display: none !important;
+  }
+}
+.sidebar__icons-panel {
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sidebar__item {
+  padding: 15px 0 15px 36px;
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  grid-template-areas: "icon subtitle";
+  gap: 0 10px;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease-out;
+}
+.sidebar__item:hover .sidebar__icon path {
+  stroke: #3a546b;
+}
+.sidebar__item:hover .sidebar__subtitle {
+  color: #2d343b;
+}
+.sidebar__item_active, .sidebar__item_active:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  border-top: 1px solid white;
+  border-right: 4px solid #0085ff;
+}
+.sidebar__item_active .sidebar__icon path, .sidebar__item_active:hover .sidebar__icon path {
+  stroke: #0085ff;
+}
+.sidebar__item_active .sidebar__subtitle, .sidebar__item_active:hover .sidebar__subtitle {
+  color: #0085ff;
+}
+.sidebar__list {
+  padding-left: 36px;
+  margin-top: 20px;
+  border-top: 2px solid white;
+  padding-top: 20px;
+}
+@media (max-width: 1280px) {
+  .sidebar__list {
+    display: none !important;
+  }
+}
+.sidebar__list ul {
+  padding: 0;
+  display: grid;
+  gap: 22px 0;
+}
+.sidebar__list_title {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #2a2a2a;
+  margin-bottom: 18px;
+}
+.sidebar__list_item {
+  list-style: none;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #565555;
+}
+.sidebar__list_item a {
+  color: #0085ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sidebar__list_item a:hover {
+  opacity: 0.7;
+}
+.sidebar__tags {
+  padding-left: 36px;
+  margin-top: 20px;
+  border-top: 2px solid white;
+  padding-top: 20px;
+}
+@media (max-width: 1280px) {
+  .sidebar__tags {
+    display: none !important;
+  }
+}
+.sidebar__tags ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar__tags_title {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #2a2a2a;
+}
+.sidebar__tags_item {
+  list-style: none;
+  width: fit-content;
+  height: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 6px;
+  margin-top: 19px;
+  margin-right: 5px;
+  background: #5241bf;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 99%;
+  color: #ffffff;
+}
+.sidebar__tags_cross {
+  margin-left: 4px;
+  cursor: pointer;
+}

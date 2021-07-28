@@ -1,0 +1,106 @@
+.desktop-page {
+  width: 100%;
+  background: url("../../assets/desktop-page/bg.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+.desktop-page .header {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(185, 251, 255, 0.2) 0%, rgba(227, 220, 255, 0.2) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  margin-bottom: 76px;
+  padding: 0 380px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1280px) {
+  .desktop-page .header {
+    padding: 0 40px 0;
+  }
+}
+@media (max-width: 900px) {
+  .desktop-page .header {
+    display: none;
+  }
+}
+.desktop-page .header__cloud {
+  margin-right: 10px;
+}
+.desktop-page .header__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1280px) {
+  .desktop-page .header__info {
+    margin-left: 98px;
+  }
+}
+.desktop-page .header__state {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #bbbbbb;
+}
+.desktop-page .header__state span {
+  color: #62bd6b;
+}
+.desktop-page .header__settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.desktop-page .header__settings-title {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #565555;
+}
+.desktop-page .header__settings-icon {
+  margin-right: 10px;
+}
+
+.list {
+  height: 100vh;
+  width: auto;
+  top: 20%;
+  margin: 147px 19.5% 0 22.5%;
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+@media (max-width: 1280px) {
+  .list {
+    margin: 100px 20px 0 120px !important;
+  }
+}
+@media (max-width: 900px) {
+  .list {
+    margin: 0 !important;
+    height: 100vh;
+  }
+}
+.list::-webkit-scrollbar {
+  width: 0;
+}
