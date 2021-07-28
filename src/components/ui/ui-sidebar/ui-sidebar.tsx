@@ -9,7 +9,6 @@ import {
     GridIcon,
     CodesandboxIcon,
     TrendingIcon,
-    openMenuIcon,
 } from './images'
 import gsap from 'gsap'
 import {useState} from 'react'
@@ -83,12 +82,12 @@ const Sidebar: React.FC = () => {
         <section className='sidebar'>
             <div className='sidebar__icons'>
                 <div className='sidebar__header'>
-                    <img src={logo} className='sidebar__logo'></img>
+                    <img alt='logo' src={logo} className='sidebar__logo'></img>
                     <p className='sidebar__title'>
                         Dapplets Project<span>.</span>
                     </p>
                     <div onClick={closeSidebar} className='sidebar__arrow'>
-                        <img src={arrow} />
+                        <img alt='arrow' src={arrow} />
                     </div>
                 </div>
 

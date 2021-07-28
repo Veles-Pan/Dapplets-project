@@ -64,7 +64,7 @@ export const Item = (props: IProps) => {
                 {...attributes}
                 {...listeners}
             />
-            <img className='item__icon' src={props.image}></img>
+            <img alt='icon' className='item__icon' src={props.image}></img>
             <p className='item__author'>{props.item.title}</p>
             <p className='item__id'>
                 {props.item.id.slice(0, 5)}...
@@ -79,18 +79,22 @@ export const Item = (props: IProps) => {
 
             <p className='item__link'>{props.item.author}</p>
             <ul className='item__tags'>
-                {props.item.tags.map(tag => (
-                    <li className='item__tag'>
+                {props.item.tags.map((tag: string, index: number) => (
+                    <li key={index} className='item__tag'>
                         {props.tags[tag] ? props.tags[tag] : undefined}
-                        <img className='item__cross' src={cross} />
+                        <img alt='×' className='item__cross' src={cross} />
                     </li>
                 ))}
             </ul>
             <div className='item__install'>
                 <p className='install'>Install</p>
-                <img src={install} className='install_icon' />
+                <img alt='install' src={install} className='install_icon' />
                 <p className='uninstall'>Uninstall</p>
-                <img src={uninstall} className='uninstall_icon' />
+                <img
+                    alt='uninstall'
+                    src={uninstall}
+                    className='uninstall_icon'
+                />
             </div>
 
             <div
@@ -101,6 +105,7 @@ export const Item = (props: IProps) => {
             >
                 {extraInfos.map((element, index: number) => (
                     <div
+                        key={index}
                         className={`item__extra_container item__extra_container${
                             index + 1
                         }`}

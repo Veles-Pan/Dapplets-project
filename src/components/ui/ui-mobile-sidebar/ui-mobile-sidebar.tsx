@@ -66,7 +66,11 @@ const MobileSidebar: React.FC = () => {
         <section className='mobile-sidebar'>
             <div className='mobile-sidebar__icons'>
                 <div className='mobile-sidebar__header'>
-                    <img src={logo} className='mobile-sidebar__logo'></img>
+                    <img
+                        alt='logo'
+                        src={logo}
+                        className='mobile-sidebar__logo'
+                    ></img>
                     <p className='mobile-sidebar__title'>
                         Dapplets Project<span>.</span>
                     </p>
@@ -75,7 +79,7 @@ const MobileSidebar: React.FC = () => {
                         onClick={openMenu}
                         className='mobile-sidebar__open-menu'
                     >
-                        <img src={openMenuIcon} />
+                        <img alt='open menu' src={openMenuIcon} />
                     </div>
                 </div>
 

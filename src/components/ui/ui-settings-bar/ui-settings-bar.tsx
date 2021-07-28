@@ -75,7 +75,7 @@ const SettingsBar: React.FC = () => {
                 }}
                 className='settings-bar__arrow'
             >
-                <img src={arrow} />
+                <img alt='arrow' src={arrow} />
             </div>
 
             <div className='settings-bar__extra'>
@@ -118,8 +118,8 @@ const SettingsBar: React.FC = () => {
                 <div className='tags'>
                     <p className='title tags__title'>My tags</p>
                     <ul>
-                        {myTags.map((element: string) => (
-                            <li className='tags__item'>
+                        {myTags.map((element: string, index: number) => (
+                            <li key={index} className='tags__item'>
                                 {element}
                                 <img
                                     className='tags__cross'
@@ -134,8 +134,8 @@ const SettingsBar: React.FC = () => {
                 <div className='comunity'>
                     <p className='title comunity__title'>Community tags</p>
                     <ul>
-                        {comunityTags.map((element: string) => (
-                            <li className='comunity__item'>
+                        {comunityTags.map((element: string, index: number) => (
+                            <li key={index} className='comunity__item'>
                                 {element}
                                 <img
                                     className='comunity__cross'
@@ -150,8 +150,10 @@ const SettingsBar: React.FC = () => {
                 <div className='working-on'>
                     <p className='title working-on__title'>Working on</p>
                     <ul>
-                        {workingOn.map((element: string) => (
-                            <li className='working-on__item'>{element}</li>
+                        {workingOn.map((element: string, index: number) => (
+                            <li key={index} className='working-on__item'>
+                                {element}
+                            </li>
                         ))}
                     </ul>
                 </div>

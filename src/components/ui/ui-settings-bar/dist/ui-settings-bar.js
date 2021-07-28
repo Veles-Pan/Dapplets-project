@@ -68,7 +68,7 @@ var SettingsBar = function () {
                 changeOpening(function (prevState) { return !prevState; });
                 handleSettingsBar();
             }, className: 'settings-bar__arrow' },
-            react_1["default"].createElement("img", { src: arrow_right_svg_1["default"] })),
+            react_1["default"].createElement("img", { alt: 'arrow', src: arrow_right_svg_1["default"] })),
         react_1["default"].createElement("div", { className: 'settings-bar__extra' },
             react_1["default"].createElement("div", { className: 'settings' },
                 react_1["default"].createElement("p", { className: 'title settings__title' }, "Dapplet Settings"),
@@ -84,16 +84,16 @@ var SettingsBar = function () {
                         react_1["default"].createElement("button", { className: 'settings__create-container_button' }, "Create")))),
             react_1["default"].createElement("div", { className: 'tags' },
                 react_1["default"].createElement("p", { className: 'title tags__title' }, "My tags"),
-                react_1["default"].createElement("ul", null, myTags.map(function (element) { return (react_1["default"].createElement("li", { className: 'tags__item' },
+                react_1["default"].createElement("ul", null, myTags.map(function (element, index) { return (react_1["default"].createElement("li", { key: index, className: 'tags__item' },
                     element,
                     react_1["default"].createElement("img", { className: 'tags__cross', src: cross_svg_1["default"], alt: 'del' }))); }))),
             react_1["default"].createElement("div", { className: 'comunity' },
                 react_1["default"].createElement("p", { className: 'title comunity__title' }, "Community tags"),
-                react_1["default"].createElement("ul", null, comunityTags.map(function (element) { return (react_1["default"].createElement("li", { className: 'comunity__item' },
+                react_1["default"].createElement("ul", null, comunityTags.map(function (element, index) { return (react_1["default"].createElement("li", { key: index, className: 'comunity__item' },
                     element,
                     react_1["default"].createElement("img", { className: 'comunity__cross', src: cross_svg_1["default"], alt: 'del' }))); }))),
             react_1["default"].createElement("div", { className: 'working-on' },
                 react_1["default"].createElement("p", { className: 'title working-on__title' }, "Working on"),
-                react_1["default"].createElement("ul", null, workingOn.map(function (element) { return (react_1["default"].createElement("li", { className: 'working-on__item' }, element)); }))))));
+                react_1["default"].createElement("ul", null, workingOn.map(function (element, index) { return (react_1["default"].createElement("li", { key: index, className: 'working-on__item' }, element)); }))))));
 };
 exports["default"] = SettingsBar;

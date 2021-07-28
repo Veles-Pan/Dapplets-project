@@ -3,7 +3,7 @@ exports.__esModule = true;
 var axios_1 = require("axios");
 var API_URL = ' https://dapplets-hiring-api.herokuapp.com/api/v1';
 var DAPPLETS = '/dapplets';
-var LIMIT = 13;
+var LIMIT = 10;
 function fetchApi(_a) {
     var search = _a.search, start = _a.start, theme = _a.theme, order = _a.order, isScrolled = _a.isScrolled, changeResultLoading = _a.changeResultLoading, filterSearchResult = _a.filterSearchResult, createListItems = _a.createListItems, setIsScrolled = _a.setIsScrolled, stopLoader = _a.stopLoader, items = _a.items;
     axios_1["default"]

@@ -3,7 +3,7 @@ import {IItem} from '../ui/ui-itemList/types'
 
 const API_URL = ' https://dapplets-hiring-api.herokuapp.com/api/v1'
 const DAPPLETS = '/dapplets'
-const LIMIT = 13
+const LIMIT = 10
 
 export default function fetchApi({
     search,

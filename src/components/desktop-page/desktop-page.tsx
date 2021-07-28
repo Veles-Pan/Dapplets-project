@@ -13,14 +13,18 @@ function DesktopPage() {
         <div className='desktop-page'>
             <header className='header'>
                 <div className='header__info'>
-                    <img src={cloud} className='header__cloud' />
+                    <img alt='cloud' src={cloud} className='header__cloud' />
                     <p className='header__state'>
                         Extension state: <span>Active</span>
                     </p>
                 </div>
 
                 <div className='header__settings'>
-                    <img src={settings} className='header__settings-icon' />
+                    <img
+                        alt='settings'
+                        src={settings}
+                        className='header__settings-icon'
+                    />
                     <p className='header__settings-title'>Settings</p>
                 </div>
             </header>

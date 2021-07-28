@@ -61,12 +61,12 @@ var Sidebar = function () {
     return (react_1["default"].createElement("section", { className: 'sidebar' },
         react_1["default"].createElement("div", { className: 'sidebar__icons' },
             react_1["default"].createElement("div", { className: 'sidebar__header' },
-                react_1["default"].createElement("img", { src: images_1.logo, className: 'sidebar__logo' }),
+                react_1["default"].createElement("img", { alt: 'logo', src: images_1.logo, className: 'sidebar__logo' }),
                 react_1["default"].createElement("p", { className: 'sidebar__title' },
                     "Dapplets Project",
                     react_1["default"].createElement("span", null, ".")),
                 react_1["default"].createElement("div", { onClick: closeSidebar, className: 'sidebar__arrow' },
-                    react_1["default"].createElement("img", { src: images_1.arrow }))),
+                    react_1["default"].createElement("img", { alt: 'arrow', src: images_1.arrow }))),
             react_1["default"].createElement("nav", { className: 'sidebar__icons-panel' }, iconImages.map(function (element, index) {
                 var Icon = element.img;
                 return (react_1["default"].createElement("div", { key: index, className: activeElement === element.id
