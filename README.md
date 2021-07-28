@@ -2,23 +2,23 @@
 
 ![Initial loding](https://github.com/Veles-Pan/Dapplets-project/raw/main/src/assets/for-readme/loading.gif)
 
-Application functionality:
-• Loading data from the server (with axios)
-• Drag & drop for sorting (with dnd-kit)
+Application functionality: \
+• Loading data from the server (with axios) \
+• Drag & drop for sorting (with dnd-kit) \
 
 ![Searching](https://github.com/Veles-Pan/Dapplets-project/raw/main/src/assets/for-readme/search.gif)
 
-• Fuzzy and Live Search with debouncing 
-• Server response filtering (it may return incorrect data)
-• Loading more data as you scroll
+• Fuzzy and Live Search with debouncing \
+• Server response filtering (it may return incorrect data) \
+• Loading more data as you scroll \
 
 ![Interactive menu](https://github.com/Veles-Pan/Dapplets-project/raw/main/src/assets/for-readme/menu.gif)
 
-• Interactive menu items (with GSAP)
+• Interactive menu items (with GSAP) \
 
 ![adaptive interface](https://github.com/Veles-Pan/Dapplets-project/raw/main/src/assets/for-readme/menu.gif)
 
-• Adaptive interface (not ready thoroughly)
+• Adaptive interface (not ready thoroughly) \
 
 # Getting Started with Create React App
 
