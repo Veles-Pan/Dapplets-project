@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 import axios from 'axios'
-import {ITag} from '../../components/ui/ui-itemList/types'
+import {ITag} from '../components/ui/ui-itemList/types'
 
 const API_URL = ' https://dapplets-hiring-api.herokuapp.com/api/v1'
 

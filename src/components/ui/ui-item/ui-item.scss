@@ -204,7 +204,6 @@
         align-items: center;
         justify-content: center;
 
-        background: #0085ff;
         border-radius: 50px;
 
         .install {
@@ -243,7 +242,7 @@
         }
 
         &:hover {
-            background: #ff7a00;
+            background: #ff7a00 !important;
             .install {
                 display: none;
                 opacity: 0;
