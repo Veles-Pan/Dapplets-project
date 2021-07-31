@@ -16,6 +16,11 @@ Application functionality: \
 
 • Interactive menu items (with GSAP) 
 
+![Installation](https://github.com/Veles-Pan/Dapplets-project/raw/main/src/assets/for-readme/install.gif)
+
+• User can "install" or "uninstall" dapplets \
+• Information about installation is recorded in Local Storage (there is no such info on server)
+
 ![adaptive interface](https://github.com/Veles-Pan/Dapplets-project/raw/main/src/assets/for-readme/responsible.gif)
 
 • Adaptive interface (not ready thoroughly) 
